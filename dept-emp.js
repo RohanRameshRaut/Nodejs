@@ -5,7 +5,9 @@ const con = mysql.createConnection({
     password: "root",
     database: "crud"
 });
-
+// for authentication error use cmd-->
+// ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@123';
+// ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root@123';
 con.connect((err) => {
     if (err) throw err
     console.log("Connected to Database.");
