@@ -12,10 +12,10 @@ const myserver = http.createServer((req, res) => {
                 res.writeHead(200, { 'Content-type': 'text/html' });
                 res.end(data);
             }
-        })
+        });
 
     }
-    else if (req.url == '/About') {
+    else if (req.url == '/about') {
         fs.readFile('slip15bAbout.html', (err, data) => {
             if (err) {
                 res.writeHead(500);
@@ -25,9 +25,9 @@ const myserver = http.createServer((req, res) => {
                 res.writeHead(200, { 'Content-type': 'text/html' });
                 res.end(data);
             }
-        })
+        });
     }
-    else if (req.url == '/Contact') {
+    else if (req.url == '/contact') {
         fs.readFile('slip15bContact.html', (err, data) => {
             if (err) {
                 res.writeHead(500);
@@ -37,9 +37,9 @@ const myserver = http.createServer((req, res) => {
                 res.writeHead(200, { 'Content-type': 'text/html' });
                 res.end(data);
             }
-        })
+        });
     }
-    else if (req.url == '/Services') {
+    else if (req.url == '/services') {
         fs.readFile('slip15bServices.html', (err, data) => {
             if (err) {
                 res.writeHead(500);
