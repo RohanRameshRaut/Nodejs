@@ -56,7 +56,8 @@ con.connect((err) => {
     var sql = "SELECT min(salary), max(salary), avg(salary) FROM emp, dept WHERE did = dept.id and dept.name = 'Commerce'";
     con.query(sql, (err, result) => {
         if (err) throw err
-        console.log(result);
+        //console.log(result);
+        console.table(result);
     });
 
 });
