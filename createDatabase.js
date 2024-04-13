@@ -39,7 +39,7 @@ con.connect((err) => {
     var sql = "select * from table1";
     con.query(sql, (err, data)=>{
         if(err) throw err
-        console.table(data);
+        // console.table(data);
         //  OR
 
         // console.log('Id\tName\tAddress\tSalary');
@@ -49,8 +49,8 @@ con.connect((err) => {
         // });
         // OR
 
-        // for(i=0; i<(data.length); i++){
-        //     console.log(`${data[i].id}\t${data[i].name}\t${data[i].address}\t${data[i].salary}`);
-        // }
+        for(i=0; i<(data.length); i++){
+            console.log(`${data[i].id} |\t${data[i].name} |\t${data[i].address} |\t${data[i].salary}`);
+        }
     });
 });
