@@ -46,7 +46,7 @@ else {
 // var buf1 = Buffer.from('a');
 // var buf2 = Buffer.from('b');
 // var x = Buffer.compare(buf1, buf2);
-// console.log(x);
+// console.log(x); // check on binary
 
 // var buf1 = Buffer.from('b');
 // var buf2 = Buffer.from('a');
